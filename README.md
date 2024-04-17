@@ -15,6 +15,7 @@ Models Used:
 
 
 Tools:
+
 Flask is used to seamlessly bridge the recommendation system's frontend and backend, allowing smooth communication between the user interface and the underlying functionality. By defining routes and handling requests with Flask, we ensure efficient data exchange and presentation of recommendations to the user. This integration streamlines the user experience, making it intuitive and responsive.
 
 
