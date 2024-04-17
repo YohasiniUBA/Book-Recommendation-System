@@ -22,3 +22,5 @@ Flask is used to seamlessly bridge the recommendation system's frontend and back
 Demo Video:
 
 A demo video demonstrating the front end of the book recommendation system and explaining the code is available in the repository.
+
+https://drive.google.com/file/d/1KyAYZwwlBJcm-rcx60YXUFFPlu_Qi20e/view?usp=sharing
