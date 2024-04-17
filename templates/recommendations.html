@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Change font to Arial */
+            background-color: antiquewhite; /* Set background color */
+            padding: 20px; /* Add some padding for better readability */
+        }
+
+        h1, h2 {
+            color: rgb(37, 34, 34); /* Set color for headings */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px; /* Add spacing between list items */
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Recommendations</h1>
+    
+    <h2>Recommendations based on your past book choices using Content-Based Recommendations</h2>
+    <ul>
+        {% for book in recommendations['content_based'] %}
+            <li>{{ book['title'] }} by {{ book['authors'] }} ({{ book['genre'] }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Recommendations based on similar users using Collaborative Filtering Recommendations</h2>
+    <ul>
+        {% for book in recommendations['collaborative'] %}
+            <li>{{ book['title'] }} by {{ book['authors'] }} ({{ book['genre'] }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

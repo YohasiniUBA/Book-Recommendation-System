@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation System</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh; /* Use min-height instead of height */
+            margin: 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+            padding: 40px; /* Increase padding to increase size */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 400px; /* Optional: Set explicit width */
+            margin-left: 10px; /* Optional: Center horizontally */
+            margin-top: 150px;
+            margin-right: 340px;
+        }
+
+        h1 {
+            text-align:center;
+            color: rgb(37, 34, 34); /* Change color as needed */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Change color as needed */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc; /* Change border color as needed */
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #2ec78a; /* Change button color as needed */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2ec78a; ; /* Change button hover color as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Recommendation System</h1>
+    <form action="/recommend" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+        
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author"><br><br>
+        
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre"><br><br>
+        
+        <button type="submit">Recommend</button>
+    </form>
+</body>
+</html>
